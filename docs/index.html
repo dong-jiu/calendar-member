@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>memeber</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+
+kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb
+}
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+  body {
+    padding: 2cm; 
+  }
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h2 id="toc_0">非非万年历会员服务协议</h2>
+
+<blockquote>
+<p>欢迎您使用非非万年历提供的包月增值服务！<br>
+ 本包月增值服务<strong>本服务</strong>向非非万年历的注册用户提供，您已接受《非非万年历服务协议》注册成为非非万年历用户是接受本会员服务的前提条件。<strong>本《非非万年历会员服务协议》（“本协议”）是有关您使用非非万年历的增值服务的条款和条件，请您完整、仔细阅读，特别是加粗内容。您付费或通过兑换码等免费渠道成为非非万年历会员都建立在您同意本协议的全部条款的基础上；如果您不同意接受本协议的任一条款，您应立即停止申请成为非非万年历会员。</strong>  </p>
+</blockquote>
+
+<p><strong>1.会员服务</strong><br>
+     1.1 会员服务，又称包月增值服务，指按照非非万年历的指定方式成为会员后，会员用户可以享有由非非万年历或第三方提供的在非非万年历应用程序上或其他第三方服务场景下的产品、游戏、生活等方面特权的服务。<br>
+         1.2 非非万年历可能会根据不同的产品及服务类型，推出不同的包月增值服务。同时，非非万年历也可能会根据用户的需求、产品及服务类型的变化等，对现有包月增值服务种类进行调整以及不断推出新的包月增值服务种类，以不断完善、优化本服务。具体包月增值服务种类及服务内容以相关服务页面公布、实际提供的服务内容为准。您可以自行根据需要选择相应服务。<br>
+       1.3 您所享有的会员服务的具体内容可能会因为级别、是否登录、是否年费、开通期限、您选择的具体服务类别等因素而有不同，通常高级别、已登录、开通年费服务、开通期限较长等情况下，您将会享有更多的服务，具体以相关服务页面公布、实际提供的内容为准。<br>
+       1.4 <strong>非非万年历可能会与第三方推出联合会员服务，联合会员享有的权益以公开页面展示为准。如您选择订购联合会员产品，非非万年历仅就非非万年历提供的会员产品负责，不对第三方产品负责。第三方产品的权益、使用、收费规则等问题由第三方负责执行和解释。</strong></p>
+
+<p><strong>2.会员收费</strong></p>
+
+<p>2.1 除您符合非非万年历另行发布的条件可以享受免费试用或使用会员服务外，一般情况下，您须按照本服务的收费标准支付相应费用后，方可使用本服务。您应该通过非非万年历指定的支付渠道，包括但不限于微信支付、支付宝、Apple Pay等方式，依约支付费用后开通本服务。</p>
+
+<p>2.2
+            <strong>非非万年历会员服务收费标准、会员权益及相关规则以会员服务页面展示为准。会员费用包括基础会费（即不包含任何优惠增值权益的会员基础费用，例如常规月卡、季卡或年卡费用）以及可能的增值权益（即通过商家合作或联合发卡等形式推出的增值权益，例如合作商家的优惠券或免费使用券；联合发卡方提供的产品或服务权益。）您在购买会员服务（包括自动续费服务）之前应仔细核对账号信息、购买的服务内容、价格、服务期限等信息。会员服务费用在您支付完成后，不可转让，且不予退还（如因非非万年历原因未能提供服务或其他法定原因除外）。</strong></p>
+
+<p>2.3 您可以通过登录非非万年历会员中心免费查询您的账号信息详情，包括已开通的服务内容、服务期限、消费金额、交易状态等。</p>
+
+<p>2.4
+            非非万年历可能会根据自身业务发展的整体规划，对本服务的收费标准和方式等进行修改和变更，前述修改、变更，非非万年历将在相应服务页面进行展示。您若需要开通本服务，请先提前了解开通时关于本服务的收费标准、方式等信息。您的支付及开通行为视为您完全清楚非非万年历提供收费服务的收费标准以及对应的会员权益。<strong>非非万年历在此声明，您支付后非非万年历不接受任何形式的退费请求，您理解并清楚接受上述条件。如您不接受的，请不要选择开通会员服务。</strong></p>
+
+<p>2.5 非非万年历会根据实际运营情况对不同阶段已经激活且持续有效的VIP会员给予续费、升级方面的不同资费优惠，具体优惠政策以非非万年历在相关服务页面公告的内容为准。</p>
+
+<p>2.6
+            经您自主选择，在您已开通非非万年历会员服务的前提下，我们将为您提供连续包月、连续包季、连续包年或其他形式的自动续费服务，以产品页面展示和您的自主选择服务形式为准。本服务一经开通，即视为您授权非非万年历有权在您的非非万年历会员到期时，从您的自有充值账户、与会员账号绑定的第三方支付账户、银行卡、通信账户、iTunes账户等（以下统称“账户”）中代扣下一个计费周期的会员费。扣款将在您的会员到期前的24小时内进行。自动续费服务实现的前提是您已将非非万年历会员账号与上述账户绑定，且可成功从上述账户中扣款，因上述账户中可扣款余额不足导致的续费失败，视为您未选择本协议下的续费服务。</p>
+
+<p>2.7 若非非万年历会员免费试用未到期，在用户购买会员服务之后，视为放弃试用权利，并收回免费试用期所剩余的天数，以用户购买为时限，重新计时。免费试用的非非万年历用户亦可在开通免费试用时选择开通自动续费服务。</p>
+
+<p>2.8 会员可通过下述方式取消自动续费服务：</p>
+
+<div><pre><code class="language-none"> (1) 苹果应用内支付（IAP支付，in-app purchase）自动续费用户退订方法如下：打开苹果手机“设置”; 进入“iTunes Store 与 App Store”;点击 “Apple ID”，选择&quot;查看Apple ID&quot;，进入&quot;账户设置&quot;页面，点击“订阅”，选择非非万年历会员取消订阅即可。如未在订阅期结束的至少24小时前取消订阅，此订阅将会自动续订。
+ (2) 非苹果内支付自动续费用户，请按照非非万年历公布的流程取消自动续费。    </code></pre></div>
+
+<p><strong>3.会员权利与义务</strong><br>
+      3.1 在非非万年历会员有效期内，会员可优先参加由非非万年历组织的活动并享有由非非万年历提供的优惠及增值服务。
+3.2
+            非非万年历会员服务仅限于申请的用户账号自行使用。非非万年历会员服务期内不能在非非万年历用户帐号之间转移，禁止赠与、借用、租用、转让或售卖。<strong>否则非非万年历有权在未经通知的情况下取消转让账户、受让账户的非非万年历会员服务资格，由此带来的损失由非非万年历会员自行承担。</strong></p>
+
+<p>3.3 非非万年历会员服务内容不得用于任何商业、盈利等用途，只可供个人用途使用。</p>
+
+<p>3.4 同一非非万年历会员账号只允许在五个设备上使用，超出上述范围使用的，非非万年历将自动封禁该账号，用户应当自行承担超范围使用而导致的任何损失。</p>
+
+<p>3.5 非非万年历会员应自行负责妥善且安全地保管、使用、维护您账户信息及密码，并对您账号下的任何行为负责。</p>
+
+<p>3.6
+            您知悉并同意，为保护会员账号安全，非非万年历有权在您使用时采用一种或多种身份验证方式。如未成功通过验证的，非非万年历有合理理由怀疑您的账号出现被盗等不安全情况，有权视情节严重情况而决定是否暂停会员服务并采取进一步措施，因此造成您的会员权益受损，非非万年历不承担任何赔偿责任。</p>
+
+<p>3.7
+            非非万年历会员不得以盗窃、利用系统漏洞等非法途径以及在未获非非万年历授权的非法销售非非万年历会员的网站上获取或购买非非万年历会员服务，否则非非万年历有权取消非非万年历会员的服务资格。有此引发的问题由非非万年历会员自行承担，非非万年历不负任何责任，非非万年历有权根据自身的认定标准对于您的账号做出相应的判定。</p>
+
+<p>3.8 非非万年历会员的行为违反《非非万年历服务协议》而被禁止用户账号使用的，该账号下的会员权益（包括家庭成员可享受的服务项目）自动取消，且无权要求非非万年历给与任何退费或补偿。</p>
+
+<p><strong>4.会员有效期</strong></p>
+
+<p>4.1 本服务的服务期限以用户自行选择并支付相应服务费用的期限为准，您也可以登录非非万年历会员中心或者本服务的相应页面查询。</p>
+
+<p>4.2 会员服务开通最长期限会受到一定限制，具体以非非万年历公示的规则为准。</p>
+
+<p>4.3 在发生如下情况时，非非万年历有权中断或终止向您提供会员服务：</p>
+
+<div><pre><code class="language-none">（1）您主动注销用户账户或主动提出终止会员服务要求的；
+
+（2）您存在或非非万年历经独立判断后认为您存在任何违反国家法律法规或监管政策、违反《非非万年历用户协议》、违反本协议或有损非非万年历及其产品的声誉、利益的行为的；
+
+（3）根据法律法规、监管政策的规定或有权机关的要求；
+
+（4）维护账号与系统安全等紧急情况之需要；
+
+（5）因不可抗力原因，鉴于互联网之特殊性质，不可抗力亦包括黑客攻击、电信部门技术调整导致之重大影响、因政府管制而造成之暂时关闭、病毒侵袭等影响互联网正常运行之情形。</code></pre></div>
+
+<p><strong>5.违约责任</strong></p>
+
+<p>5.1 您理解并同意非非万年历有权对您违反本协议约定获取服务的行为追究您的相关责任，包括但不限于关闭会员服务、赔偿非非万年历因此遭受的损失以及提请公安机关追究法律责任，该等行为包括但不限于：</p>
+
+<div><pre><code class="language-none"> 1）以营利、经营等非个人使用的目的为自己或他人开通本服务；
+
+（2）通过任何机器人软件、蜘蛛软件、爬虫软件、刷屏软件等任何程序、软件方式为自己或他人开通本服务；
+
+（3）通过任何不正当手段或以违反诚实信用原则的方式为自己或他人开通本服务；
+
+（4）通过非非非万年历指定的渠道或方式开通本服务；
+
+（5）通过侵犯非非万年历或他人合法权益的方式开通本服务；
+
+（6）通过其他违反相关法律、行政法规、国家政策等的方式为自己或他人开通本服务。</code></pre></div>
+
+<p>5.2
+            如果非非万年历发现或收到他人举报您有违反本协议任何行为的，非非万年历有权依法进行独立判断并采取技术手段予以删除、屏蔽或断开相关的信息。同时，非非万年历有权视您的行为性质，对您采取包括但不限于暂停或终止部分或全部本服务、中止或终止您对非非万年历会员使用、追究您法律责任等措施，非非万年历也无需向您退还任何费用，而由此给您带来的损失，由您自行承担，造成非非万年历损失的，您也应予以赔偿。</p>
+
+<p>5.3 您有违反本协议任何行为，导致任何第三方损害的，您应当独立承担责任；非非万年历因此遭受损失的，您也应当一并赔偿。</p>
+
+<p><strong>6.其他</strong></p>
+
+<p>6.1
+            对于会员而言，本协议为《非非万年历服务协议》、《非非万年历隐私政策》的补充协议，是其不可分割的一部分。本协议如与前述协议发生冲突的，以本协议为准。非非万年历会员中心已有和未来不时发布的与会员服务相关的协议、各类公告、页面说明和规范流程、问题解答等内容均构成本协议的一部分，与本协议具有同等法律效力。</p>
+
+<p>6.2 本协议未尽事宜，以《非非万年历服务协议》为准。<br>
+                                                  杭州芽动科技有限公司<br>
+                                                 生效时间：2021 年 10 月 20 日</p>
+
+
+
+
+</body>
+
+</html>
